@@ -1,13 +1,88 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 5rem;
+  background-color: #66ccff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+/* list  */
+.header input {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  outline: none;
+  border: none;
+}
+
+.header input:focus {
+  outline: none;
+  box-shadow: 0 -7px 7px -4px rgba(0, 0, 0, 0.5);
+}
+
+.header button {
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  background-color: #2e92c4;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transform: translateY(0px);
+  transition: all 0.3s;
+}
+
+.header button:hover {
+  transform: translateY(-3px);
+}
+
+.header button:active,
+.header button:visited {
+  transform: translateY(3px);
+}
+
+.noList-text,
+.theList {
+  margin-top: 10rem;
+}
+
+.theList {
+  list-style: none;
+}
+
+.theList li {
+  padding: 0.8rem 1.6rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.899);
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+}
+
+.fa-trash {
+  color: rgb(184, 51, 51);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.fa-trash:hover {
+  transform: scale(1.1);
 }
